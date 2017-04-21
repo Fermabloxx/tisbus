@@ -432,7 +432,8 @@ p {
     text-align: center; }
   .no-touch .content-block .wrapper {
     visibility: hidden;
-    opacity: 0; }
+    opacity: 0;
+    margin-top: 30px; }
   .no-touch .content-block.is-active .wrapper {
     visibility: visible;
     opacity: 1;

@@ -343,6 +343,7 @@ p {
         .wrapper {
             visibility: hidden;
             opacity: 0;
+            margin-top: 30px;
         }
         &.is-active {
             .wrapper {
