@@ -202,7 +202,8 @@ body {
 
 .wrapper {
   width: 80%;
-  margin: 0 10%; }
+  margin: 0 10%;
+  padding: 40px; }
 
 /* Make the body 100% of the browser viewport height */
 html, body {
@@ -392,7 +393,8 @@ p {
     z-index: 2; }
   .slide#slide01 .wrapper {
     position: absolute;
-    top: 10%; }
+    top: 10%;
+    background-color: rgba(0, 0, 0, 0.3); }
   .slide#slide02 .wrapper {
     position: absolute;
     bottom: 5%; }
@@ -442,10 +444,10 @@ p {
 
 /* =Footer */
 .footer-container {
+  background-image: url(/img/07_s.png);
   text-align: center;
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.5);
-  background-color: #06060d; }
+  color: rgba(255, 255, 255, 0.5); }
   .footer-container h3 {
     margin: 0;
     padding: 20px 0;
@@ -651,7 +653,9 @@ p {
 
 .life {
   padding-bottom: 25px;
-  margin: 10px; }
+  margin: 10px;
+  font-size: 25px;
+  font-weight: 600; }
 
 .device {
   color: #ffffff;

@@ -12,9 +12,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css">
-
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,100|Roboto+Condensed:700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+
         <link rel="stylesheet" href="css/styles.css">
         <script src="modernizr.js" type="text/javascript"></script>
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -23,7 +23,7 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">Вы используете <strong>устаревшую версию</strong> браузера. Пожалуйста <a href="http://browsehappy.com/">обновите свой браузер</a> для более приятного и безопасного просмотра сайтов.</p>
         <![endif]-->
-
+        <?php include('phpmailer.php'); ?>
         <div id="preloader">
             <div class="txt">
                 <p class="txt-perc">0%</p>
@@ -39,7 +39,7 @@
               </h1>
               <p class="life cursor">НАСЛАЖДАЙТЕСЬ КОМФОРТОМ ПОВСЕДНЕВНОЙ ЖИЗНИ</p>
             </header>
-          <a href="#slide03"><span class="scroll-hint">ОФОРМИТЬ ЗАЯВКУ НА ОБОРУДОВАНИЕ</span></a>
+          <a href="#hire"><span class="scroll-hint">ОТПРАВИТЬ ЗАЯВКУ НА КОНСУЛЬТАЦИЮ</span></a>
           <p class="device cursor">ОБОРУДОВАНИЕ ДЛЯ УПРАВЛЕНИЯ ОСВЕЩЕНИЕМ, КЛИМАТОМ, ШТОРАМИ И ДРУГИМИ ДОМАШНИМИ СИСТЕМАМИ</p>
         </div>
 
@@ -146,7 +146,7 @@
            formWrap {
              background: #8f8f8f;
              font-size: 62.5%;
-             font-family: Open Sans, sans-serif;
+             font-family: 'Open Sans', sans-serif;
              font-weight: 300;
              color: #c3c3c3;
              padding-top: 140px;
@@ -157,15 +157,15 @@
              border-top: 15px solid #ec0000;
              text-align: center;
              padding: 50px 0 110px;
-             width: 70%;
+             width: 60%;
              max-width: 1100px;
              color: white;
            }
            formWrap section h1 {
              margin-bottom: 40px;
-             font-size: 2.5em;
+             font-size: 2.0em;
              text-transform: uppercase;
-             font-family: Open Sans, sans-serif;
+             font-family: 'Open Sans', sans-serif;
              font-weight: 200;
              color: whitesmoke;
            }
@@ -178,6 +178,7 @@
              width: 100%;
              position: relative;
              margin-bottom: 35px;
+             font-family: 'Open Sans', sans-serif;
            }
            form .field label {
              text-transform: uppercase;
@@ -197,7 +198,7 @@
              color: lightgrey;
            }
            form .field label + span {
-             font-family: 'SSStandard';
+             font-family: 'Open Sans', sans-serif;
              opacity: 0;
              color: white;
              display: block;
@@ -254,7 +255,8 @@
            }
            form .field input[type="text"].focused + label,
            form .field textarea.focused + label {
-             color: #EC0000;
+             background: #25ed72;
+             color: #25ed72;
            }
            form .field:hover label {
              width: 18%;
@@ -266,13 +268,14 @@
              color: white;
              -webkit-appearance: none;
              border: none;
+             border-radius: 6px;
              text-transform: uppercase;
              position: relative;
-             padding: 13px 50px;
+             padding: 13px 37px;
              font-size: 1.4em;
              letter-spacing: 0.1em;
-             font-family: Open Sans, sans-serif;
-             font-weight: 300;
+             font-family: 'Open Sans', sans-serif;
+             font-weight: 400;
              -webkit-transition: all 333ms ease-in-out;
              -moz-transition: all 333ms ease-in-out;
              -o-transition: all 333ms ease-in-out;
@@ -285,7 +288,7 @@
            }
            form input[type="submit"]:focus {
              outline: none;
-             background: #25ed4b;
+             background: #25ed72;
              color: #ffffff;
            }
 

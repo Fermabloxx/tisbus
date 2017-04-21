@@ -68,6 +68,7 @@ body {
 .wrapper {
     width: 80%;
     margin: 0 10%;
+    padding: 40px;
 }
 
 /* Make the body 100% of the browser viewport height */
@@ -287,13 +288,13 @@ p {
         .wrapper {
             position: absolute;
             top: 10%;
+            background-color: rgba(0, 0, 0, 0.3);
         }
     }
     &#slide02 {
         .wrapper {
             position: absolute;
             bottom: 5%;
-//            background-color: rgba(29, 29, 29, 0.2);
         }
     }
     &#slide03 {
@@ -359,10 +360,10 @@ p {
 
 /* =Footer */
 .footer-container {
+    background-image: url(/img/07_s.png);
     text-align: center;
     font-size: 14px;
     color: transparentize($lightest,.5);
-    background-color: #06060d;
     h3 {
         margin: 0;
         padding: 20px 0;
@@ -633,6 +634,8 @@ p {
 .life {
 	padding-bottom: 25px;
 	margin: 10px;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 .device {
